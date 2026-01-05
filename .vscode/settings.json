@@ -1,0 +1,7 @@
+{
+    "cmake.configureSettings": {
+        "PICO_SDK_FETCH_FROM_GIT": "ON",
+        "PICO_TOOLCHAIN_PATH": "C:/Users/mike/.pico-sdk/toolchain/13_2_Rel1/bin",
+        "picotool_DIR": "C:/Users/mike/.pico-sdk/picotool/2.1.1/picotool"
+    }
+}
