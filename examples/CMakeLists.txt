@@ -1,10 +1,12 @@
-# 查找当前目录下的所有源文件
-# 并将名称保存到 DIR_examples_SRCS 变量
+# Example programs for Pico Servo Driver
+# Find all source files in current directory
 aux_source_directory(. DIR_examples_SRCS)
 
-include_directories(../lib/Config)
+# Include the servo driver headers
 include_directories(../lib/Pico_Servo_Driver)
 
-# 生成链接库
+# Create examples library
 add_library(examples ${DIR_examples_SRCS})
-target_link_libraries(examples PUBLIC Config Pico_Servo_Driver )
+
+# Link against servo driver library and math library
+target_link_libraries(examples PUBLIC Pico_Servo_Driver m)
